@@ -1,6 +1,5 @@
 // Importing the necessary packages and modules for a working code
 const inquirer = require('inquirer');
-const { retrevingDepartments } = require('./db/queries');
 const ConsoleT = require('console.table');
 
 
@@ -23,8 +22,7 @@ function DepartmentsDrop() {
 
 // Function to show the beginning of the app
 function CentralDispaly() {
-    inquirer
-        .prompt([
+    prompt([
             {
                 type: 'list',
                 name: 'action',
