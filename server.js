@@ -1,12 +1,12 @@
 // Importing the necessary packages and modules for a working code
 const inquirer = require('inquirer');
-const { getAllDepartments } = require('./db/queries');
+const { retrevingDepartments } = require('./db/queries');
 const ConsoleT = require('console.table');
 
 
 // Function for departments to be displayed
 function DepartmentsDrop() {
-    getAllDepartments()
+    retrevingDepartments()
         .then((departments) => {
             console.log('Departments');
 
